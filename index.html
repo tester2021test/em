@@ -1066,9 +1066,10 @@ const firebaseConfig = {
   measurementId: "G-MDC51BZ2FJ"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
 
         // Categories
         const expenseCategories = [
